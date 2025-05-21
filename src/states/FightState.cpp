@@ -1,3 +1,5 @@
+#ifdef _WIN32
+
 #include "states/FightState.h"
 #include "screens/FightScreen.h"
 #include "game_objects/Character.h"
@@ -2437,3 +2439,5 @@ void FightState::netPlayHandleInput() {
         }
     }
 };
+
+#endif

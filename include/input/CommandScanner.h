@@ -1,6 +1,7 @@
 #ifndef _CommandScanner_h
 #define _CommandScanner_h
 
+#include <cstdint>
 #include <vector>
 typedef enum {
   CTOKEN_NEUTRAL, CTOKEN_FORWARD, CTOKEN_BACK, CTOKEN_UP, CTOKEN_DOWN,

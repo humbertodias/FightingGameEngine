@@ -1,5 +1,7 @@
 #include "graphics/Animation.h"
 #include <fstream>
+#include <arpa/inet.h>
+
 
 
 Animation::Animation(){ 

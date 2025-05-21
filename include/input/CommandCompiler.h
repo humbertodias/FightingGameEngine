@@ -24,10 +24,13 @@ public:
   ~CommandCompiler();
 
   void init();
+  void init(const char* path);
   void compile(const char* inputString);
+  void compile(const char* inputString, bool clears);
 
   CommandNode compileNode();
   CommandFunction binaryCommand(CommandFunction currentFunc, CommandTokenType type);
+  
 
   static std::vector<std::string> commandStrings;
   std::vector<CommandObj> commands;

@@ -46,6 +46,8 @@ CommandCompiler::CommandCompiler() { }
 
 CommandCompiler::~CommandCompiler(){ }
 
+std::vector<std::string> CommandCompiler::commandStrings; 
+
 void CommandCompiler::init(const char* path) {
   std::ifstream configFile(path);
   nlohmann::json commandJson;
@@ -58,12 +60,12 @@ void CommandCompiler::init(const char* path) {
       std::string commandString = commandStringObj.value()["command"].get<std::string>();
       bool clears = commandStringObj.value()["clears"].get<bool>();
       printf("commad-%s:%s:%d\n", name.c_str(), commandString.c_str(), clears);
-      CommandStringObj command{ commandString, clears };
-      commandStrings.push_back(command);
+      // CommandStringObj command{ commandString, clears };
+      // commandStrings.push_back(command);
   }
   printf("command string size:%d\n", commandStrings.size());
   for (int i = 0; i < commandStrings.size(); ++i) {
-    compile(commandStrings[i].command.c_str(), commandStrings[i].clears);
+    // compile(commandStrings[i].command.c_str(), commandStrings[i].clears);
   }
   printf("done compiling commands\n");
 }

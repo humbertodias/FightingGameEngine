@@ -16,3 +16,4 @@ data/audio/*
 **/data/**/*.wav*
 holy_grail*/
 third_party*/
+.idea

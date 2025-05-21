@@ -43,7 +43,7 @@ int main(int argc, char* args[]) {
     // defaults
     printf("calling defaults\n");
     game.stateManager->getInstance()->setPnum(1);
-    game.graphics->resizeWindow(true);
+    // game.graphics->resizeWindow(true);
     game.stateManager->getInstance()->setCharName(1, "samurai");
     game.stateManager->getInstance()->setCharName(2, "samurai");
     game.stateManager->getInstance()->setIP("127.0.0.1");

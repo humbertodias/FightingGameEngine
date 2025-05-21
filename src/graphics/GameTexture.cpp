@@ -3,6 +3,8 @@
 #include <stdexcept>
 #include <iostream>
 #include <fstream>
+#include <arpa/inet.h>
+
 
 GameTexture::GameTexture(){ }
 GameTexture::~GameTexture(){ }

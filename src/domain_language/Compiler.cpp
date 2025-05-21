@@ -1,5 +1,6 @@
 #include <fstream>
 #include <iostream>
+#include <cstring>
 #include "domain_language/Compiler.h"
 
 

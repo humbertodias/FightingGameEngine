@@ -107,6 +107,7 @@ public:
   };
 
   void initCommandCompiler();
+  void initCommandCompiler(const char* path);
   bool wasPressed(Input input, bool strict = true, int index = 0, bool pressed = true);
   bool wasPressedBuffer(Input input, bool strict = true, bool pressed = true);
   bool wasReleased(Input input, bool strict = true, int index = 0);

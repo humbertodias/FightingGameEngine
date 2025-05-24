@@ -13,6 +13,7 @@ and integration with godot via gdextension - https://github.com/MicahMartin/fg_s
 sudo apt install nlohmann-json3-dev libboost-all-dev
 ```
 
+GGPO
 ```shell
 git clone --branch linuxpr https://github.com/Shugyousha/ggpo ggpo_linux
 cd ggpo_linux
